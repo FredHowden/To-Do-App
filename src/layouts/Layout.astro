@@ -1,0 +1,18 @@
+---
+import Header from "../components/header";
+import "../styles/global.css";
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" href="/favicon.ico" />
+        <title>My to do list</title>
+    </head>
+    <body>
+        <Header client:load />
+            <slot />
+    </body>
+</html>
