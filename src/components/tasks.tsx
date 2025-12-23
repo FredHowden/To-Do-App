@@ -15,7 +15,7 @@ export default function Tasks() {
         const firstTimeVisiting = !localStorage.getItem("Visited");
 
         if (savedTasks) {
-            const parsedTasksInfo = JSON.parse(savedTasks).map((task: any) => ({
+            const parsedTasksInfo = JSON.parse(savedTasks).map((task: TaskInfo) => ({
                 ...task,
                 timeMade: new Date(task.timeMade)
             }));
